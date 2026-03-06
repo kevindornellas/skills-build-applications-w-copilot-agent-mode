@@ -1,0 +1,125 @@
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f9 0%, #e0e7ef 100%);
+  color: #2d3a4a;
+  text-align: center;
+}
+
+
+.App-logo {
+  height: 48px;
+  width: auto;
+  margin-right: 1rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link, .navbar .nav-link, a {
+  color: #3a7bd5;
+  transition: color 0.2s;
+}
+.App-link:hover, .navbar .nav-link:hover, a:hover {
+  color: #00b894;
+  text-decoration: underline;
+}
+
+/* Bootstrap Table Customization */
+.table {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.table thead {
+  background: #3a7bd5;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f0f4f9;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #e0e7ef;
+}
+
+/* Bootstrap Button Customization */
+.btn, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-secondary {
+  border-radius: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 8px rgba(58,123,213,0.08);
+}
+.btn-primary {
+  background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+  border: none;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #3a7bd5;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* Navbar Customization */
+.navbar {
+  background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%) !important;
+  box-shadow: 0 2px 8px rgba(58,123,213,0.08);
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+  color: #00d2ff !important;
+}
+
+/* Card Customization */
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(58,123,213,0.08);
+}
+
+/* Favicon and logo tweaks */
+.app-favicon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
